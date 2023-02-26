@@ -2,7 +2,7 @@ import React from "react"
 import Die from "./components/Die"
 import Roll from "./components/Roll"
 import { nanoid } from "nanoid"
-import Confetti from "react-confetti"
+import Win from "./components/Win"
 
 function App() {
 
@@ -67,7 +67,7 @@ function App() {
 
   return (
       <main>
-        {tenzies && <Confetti />}
+        {tenzies && <Win />} 
         <h1>Tenzies</h1>
         <p>
           Roll until all dice are the same. Click each die 
